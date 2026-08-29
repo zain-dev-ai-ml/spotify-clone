@@ -10,11 +10,11 @@ This project recreates the core experience of a modern music streaming interface
 
 ### 🖥️ Desktop View
 
-![Spotify Web Clone - Desktop View](images/Dashboard-Preview2.png)
+![Spotify Web Clone - Desktop View](images/DashboardPreview2.png)
 
 ### 🎵 Music Player View
 
-![Spotify Web Clone - Music Player](images/Dashboard-Preview-1.png)
+![Spotify Web Clone - Music Player](images/DashboardPreview1.png)
 
 ---
 
