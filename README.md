@@ -1,33 +1,88 @@
-# 🎧 Spotify Clone
+# 🎵 Spotify Web Clone
 
-A web‑based music player that mimics the core experience of Spotify.  
-Browse playlists by artist, play songs, control playback, and manage your profile — all in your browser.
+A responsive Spotify-inspired web music player built using **HTML, CSS, and JavaScript**.
 
-![Screenshot 1](images/DashboardPreview1.png)
-![Screenshot 2](images/DashboardPreview1.png)
+This project recreates the core experience of a modern music streaming interface with playlist browsing, user authentication, profile management, and interactive audio playback controls.
+
+---
+
+## 📸 Project Preview
+
+### 🖥️ Desktop View
+
+![Spotify Web Clone - Desktop View](images/Dashboard-Preview2.png)
+
+### 🎵 Music Player View
+
+![Spotify Web Clone - Music Player](images/Dashboard-Preview-1.png)
 
 ---
 
 ## ✨ Features
 
-- **Artist‑based Playlists** – Click any album card to load that artist's songs.
-- **Playback Controls** – Play, pause, next, previous, and seek through any track.
-- **Volume & Mute** – Adjust volume or mute instantly.
-- **Dynamic Song List** – Songs are loaded from folders; click any song to play.
-- **User Authentication** – Sign up / Log in (persisted in localStorage) – required to play music.
-- **Profile Management** – Update your name or password.
-- **Responsive Design** – Works seamlessly on desktop, tablet, and mobile.
-- **Mobile Sidebar** – Hamburger menu slides in/out on small screens.
+- 🎵 Spotify-inspired user interface
+- 📱 Responsive design for desktop and mobile devices
+- 🔐 User Sign Up and Log In system
+- 👤 User profile management
+- 🚪 Logout functionality
+- 💾 Authentication state stored using Local Storage
+- 🎼 Multiple artist playlists
+- ▶️ Play and pause songs
+- ⏮️ Previous song control
+- ⏭️ Next song control
+- 🔊 Volume control
+- 🔇 Mute / unmute functionality
+- ⏩ Interactive music seekbar
+- ⏱️ Real-time song duration display
+- 📂 Dynamic song loading from playlist folders
+- 🎨 Active playlist and currently playing song highlighting
+- 📱 Responsive sidebar with mobile hamburger menu
+- 🔔 Popup notifications for user actions
+
+---
+
+## 🎧 Available Playlists
+
+The project currently contains playlists for multiple artists and collections, including:
+
+- Atif Aslam
+- Arijit Singh
+- Sidhu Moose Wala
+- Faheem Abdullah
+- Yo Yo Honey Singh
+- Jubin Nautiyal
+- Bilal Saeed
+- Sahir Ali Bagga
+- Ali Zafar
+- Pakistani Drama OSTs
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **HTML5** – structure
-- **CSS3** – styling (custom grid, flexbox, animations)
-- **JavaScript (ES6)** – logic, audio API, DOM manipulation
-- **LocalStorage** – user auth and session persistence
+| Technology | Purpose |
+|------------|---------|
+| HTML5 | Website structure |
+| CSS3 | Styling and responsive layout |
+| JavaScript | Functionality and interactivity |
+| Local Storage | User authentication/session data |
+| HTML5 Audio API | Music playback |
 
 ---
 
-## 📁 Project Structure
+## 🔐 Authentication System
+
+The project includes a simple client-side authentication system.
+
+Users can:
+
+- Create an account
+- Log in
+- Log out
+- View their profile
+- Update their name
+- Update their password
+- Maintain their login session
+
+---
+
