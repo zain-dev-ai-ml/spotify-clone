@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>Spotify Clone | By zain05-Dev</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+</head>
+<body>
+
+    <div class="container flex bg-black">
+
+        <!-- ===== LEFT SIDEBAR ===== -->
+        <div class="left bg-black" id="leftSidebar">
+
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo" style="display: flex; justify-content: space-between; align-items: center;">
+                    <img class="invert" src="images/logo.svg" width="110px" alt="logo" />
+                    <!-- CLOSE BUTTON (mobile) -->
+                    <span class="close-sidebar" id="closeSidebarBtn">✕</span>
+                </div>
+                <ul>
+                    <li><img class="invert" src="images/home.svg" alt="home" />Home</li>
+                    <li><img class="invert" src="images/search.svg" alt="search" />Search</li>
+                </ul>
+                
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="images/playlist.svg" alt="" />
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <ul>
+                            <li><a href="https://www.spotify.com/pk-en/legal/">Legal</a></li>
+                            <li><a href="https://www.spotify.com/pk-en/safetyandprivacy/">Safety &amp; Privacy Center</a></li>
+                            <li><a href="https://www.spotify.com/pk-en/legal/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="https://www.spotify.com/pk-en/legal/cookies-policy/">Cookies</a></li>
+                            <li><a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3">About Ads</a></li>
+                            <li><a href="https://www.spotify.com/pk-en/accessibility/">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== RIGHT CONTENT ===== -->
+        <div class="right bg-black bg-grey rounded m-1">
+
+            <!-- HEADER -->
+            <div class="header">
+                <div class="nav">
+                    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle sidebar">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <svg class="nav-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="nav-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons" id="headerButtons">
+                    <button class="signupbtn" id="signupBtn">Sign up</button>
+                    <button class="loginbtn" id="loginBtn">Log in</button>
+                    <!-- Profile Avatar -->
+                    <div class="profile-section" id="profileSection" style="display:none;">
+                        <div class="profile-avatar" id="profileAvatar">
+                            <span id="avatarInitials">ZA</span>
+                        </div>
+                        <button class="logout-btn" id="logoutBtn">Logout</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLAYLISTS -->
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardcontainer" id="cardContainer">
+                    <!-- ===== STATIC CARDS with data-folder ===== -->
+                    <!-- Card 1 -->
+                    <div data-folder="AtifAslam" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84c6567ac6fe1cb8b9ad541b52" alt="" />
+                        <h2>Atif Aslam</h2>
+                        <p><a href="">Atif Aslam's All Songs Album</a></p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div data-folder="ArijitSingh" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c74d28e2d8f83ff5f0b653212" alt="" />
+                        <h2>Arijit Singh</h2>
+                        <p><a href="">Arijit Singh's All Songs Album</a></p>
+                    </div>
+                   <!-- Card 3 -->
+                    <div data-folder="SidhuMoosewala" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000022bb617cb6623e415fb046bb0" alt="" />
+                        <h2>Sidhu Moose Wala</h2>
+                        <p><a href="">Sidhu's All Songs Album</a></p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div data-folder="FaheemAbdullah" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab6761610000939bc3342f506f238d63c9dee119" alt="" />
+                        <h2>Faheem Abdullah</h2>
+                        <p><a href="">Faheem's All Songs Album</a></p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div data-folder="YoYoHoneySingh" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c000097ac771a5ba66e1a0ffa5da1d823" alt="" />
+                        <h2>Yo Yo Honey Singh</h2>
+                        <p><a href="">Honey Singh's All Songs Album</a></p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div data-folder="JubinNautiyal" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab6761610000939b716a9e718655bd0374073ef7" alt="" />
+                        <h2>Jubin Nautiyal</h2>
+                        <p><a href="">Jubin Nautiyal's All Songs Album</a></p>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div data-folder="BilalSaeed" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab6761610000939be0e30ea9839ffbff82ee46cf" alt="" />
+                        <h2>Bilal Saeed</h2>
+                        <p><a href="">Bilal Saeed's All Songs Album</a></p>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div data-folder="SahirAliBagga" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c000097acad934a750a3278af8ccd0d37" alt="" />
+                        <h2>Sahir Ali Bagga</h2>
+                        <p><a href="">Sahir's All Songs Album</a></p>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div data-folder="AliZafar" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02a06bb74372ad09765d800ab0" alt="" />
+                        <h2>Ali Zafar</h2>
+                        <p><a href="">Ali Zafar's All Songs Album</a></p>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div data-folder="AllPakistaniSerials" class="card">
+                        <div class="play">
+                            <svg width="40" height="40" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                <circle cx="30" cy="30" r="30" fill="#1DB954" />
+                                <path d="M25.05 21.606 38.54 29.394a.7.7 0 0 1 0 1.212L25.05 38.394A.7.7 0 0 1 24 37.788V22.212a.7.7 0 0 1 1.05-.606" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e020217dbd38af8e9a677ee0599ab67616d00001e028026e6144edb665d92edd89dab67616d00001e028f5b206a463769a471e9cce6ab67616d00001e02ff0b181a3d0ec1a130627b51" alt="" />
+                        <h2>All Drama Serials OST</h2>
+                        <p><a href="">Pakistani Darama's All Songs Album</a></p>
+                    </div>
+                </div>
+
+                </div>
+
+                <!-- PLAYBAR -->
+                <div class="playbar" id="playbar">
+                    <div class="abovebar">
+                        <div class="songinfo" id="songInfo">Select a song</div>
+                        <div class="songbuttons">
+                            <img id="previous" src="images/prev.svg" alt="Previous" />
+                            <img id="play" src="images/play.svg" alt="Play" />
+                            <img id="next" src="images/next.svg" alt="Next" />
+                        </div>
+
+                        <div class="timevol">
+                            <div class="songtime" id="songTime">00:00 / 00:00</div>
+                            <div class="volume">
+                                <img width="25" src="images/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="VloumeBar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seekbar" id="seekbar">
+                        <div class="circle" id="seekCircle"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-content">
+            <span class="auth-close" id="authClose">&times;</span>
+            <h2 id="authTitle">Sign Up</h2>
+            <form id="authForm">
+                <div id="nameField" class="auth-field">
+                    <label>Full Name</label>
+                    <input type="text" id="authName" placeholder="Your name" required />
+                </div>
+                <div class="auth-field">
+                    <label>Email</label>
+                    <input type="email" id="authEmail" placeholder="you@example.com" required />
+                </div>
+                <div class="auth-field">
+                    <label>Password</label>
+                    <input type="password" id="authPassword" placeholder="Min 6 characters" required minlength="6" />
+                </div>
+                <button type="submit" id="authSubmitBtn">Sign Up</button>
+            </form>
+            <p class="auth-toggle">
+                <span id="authToggleText">Already have an account?</span>
+                <a href="#" id="authToggleLink">Log In</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="profile-modal" id="profileModal">
+        <div class="profile-content">
+            <span class="profile-close" id="profileClose">&times;</span>
+            <h2>User Profile</h2>
+            <div class="profile-field">
+                <label>Name</label>
+                <input type="text" id="profileName" />
+            </div>
+            <div class="profile-field">
+                <label>Email</label>
+                <input type="email" id="profileEmail" disabled />
+            </div>
+            <div class="profile-field">
+                <label>New Password (optional)</label>
+                <input type="password" id="profilePassword" placeholder="Leave blank to keep current" minlength="6" />
+            </div>
+            <button id="profileSaveBtn">Save Changes</button>
+            <p id="profileMessage" class="profile-message"></p>
+        </div>
+    </div>
+
+    <!-- Popup Notification -->
+    <div id="popupMessage" class="popup-message"></div>
+
+    <!-- overlay for mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
